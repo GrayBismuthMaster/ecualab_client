@@ -35,7 +35,7 @@ const OBTENER_PEDIDOS = gql`
         }
     }
 `
-    const pedidos = () => {
+    const estadisticas = () => {
         
     const {data, loading, error} = useQuery(OBTENER_PEDIDOS);
     const [pedidosVendedor, setPedidosVendedor] = useState([])
@@ -133,4 +133,4 @@ const dataNew = [
     
     }
   
-export default pedidos
+export default estadisticas
